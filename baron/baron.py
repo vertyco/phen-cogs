@@ -652,6 +652,8 @@ class Baron(commands.Cog):
         guilds: list = None,
         author: discord.User = None,
     ):
+        if not guild:
+            return
         if guild.icon is None:
             icon = None
         else:
